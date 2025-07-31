@@ -1,4 +1,4 @@
 # test-script-repo
-<p align="center">
-  <img src="pop_up.png" alt="" width="500"/>
-</p>
+
+
+![pop up](https://https://github.com/andylinx/test-script-repo/blob/main/pop_up.png?raw=true)
