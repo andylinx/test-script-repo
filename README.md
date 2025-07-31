@@ -1,2 +1,4 @@
 # test-script-repo
-![alt text](pop_up.png)
+<p align="center">
+  <img src="pop_up.png" alt="" width="500"/>
+</p>
