@@ -3,25 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Script</title>
+    <title>Pop-up Demonstration</title>
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; line-height: 1.6; padding: 2em; max-width: 800px; margin: 0 auto; background-color: #f6f8fa; color: #24292e; }
-        h1, h2 { border-bottom: 1px solid #eaecef; padding-bottom: .3em; }
-        code { background-color: #f0f0f0; padding: .2em .4em; margin: 0; font-size: 85%; border-radius: 6px; font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; }
-        pre { background-color: #24292e; color: #f6f8fa; padding: 1em; border-radius: 6px; overflow-x: auto; }
-        .warning { background-color: #fffbdd; border-left: 5px solid #ffb900; padding: 1em; margin: 1em 0; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .image-container {
+            margin: 30px 0;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            background: #fafafa;
+        }
+        
+        .demo-image {
+            width: 500px;
+            height: 300px;
+            object-fit: contain;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background: white;
+        }
+        
+        .description {
+            color: #666;
+            line-height: 1.6;
+            margin-top: 20px;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #0366d6;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        
+        .github-link:hover {
+            background: #0256cc;
+        }
     </style>
 </head>
 <body>
-
-    <h2>Execute on Linux / macOS</h2>
-    <p>Open your Terminal, copy and paste the command below, and press Enter to execute:</p>
-    <pre><code>curl -sSL https://raw.githubusercontent.com/andylinx/test-script-repo/refs/heads/main/test.sh | bash</code></pre>
-
-    <h2>Execute on Windows (PowerShell)</h2>
-    <p>Open PowerShell, copy and paste the command below, and press Enter to execute. You may need to adjust your execution policy first.</p>
-    <p><i>If you encounter an execution policy error, first run PowerShell as an Administrator and execute <code>Set-ExecutionPolicy RemoteSigned -Scope Process</code>.</i></p>
-    <pre><code>irm https://raw.githubusercontent.com/andylinx/test-script-repo/refs/heads/main/test.sh | iex</code></pre>
-
+    <div class="container">
+        <h1>Pop-up Demonstration</h1>
+        
+        <div class="image-container">
+            <img src="pop_up.png" alt="Pop-up demonstration" class="demo-image">
+        </div>
+        
+        <div class="description">
+            <p>This page demonstrates the pop-up functionality shown in the image above.</p>
+            <p>The image is displayed at 500×300 pixels as requested.</p>
+        </div>
+        
+        <a href="#" class="github-link">View on GitHub</a>
+    </div>
 </body>
 </html>
